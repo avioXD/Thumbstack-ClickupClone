@@ -1,0 +1,101 @@
+.container {
+  padding: 0;
+}
+
+.main-nav {
+  z-index: 2;
+  position: fixed;
+  background-color: transparent;
+}
+
+.Navbar {
+  margin: auto;
+  left: 15%;
+  top: 0;
+  padding: 3rem;
+  width: 70%;
+  background-color: transparent;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .nav-btn:hover {
+  padding: 0.2rem 1rem;
+  margin-right: 0.6rem;
+  border: 0px;
+  background-color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #002770;
+}
+
+.nav-onscroll {
+  background-color: white;
+}
+
+.nav-onscroll .Navbar {
+  border-bottom: 1px solid gainsboro;
+}
+
+.nav-onscroll .nav-btn,
+.nav-onscroll .btn-login {
+  color: #505050;
+}
+
+.logo {
+  width: 7rem;
+  margin: auto;
+}
+
+.nav-btn {
+  padding: 0.2rem 1rem;
+  margin-right: 0.6rem;
+  border: 0px;
+  background-color: transparent;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+
+.btn-login {
+  padding: 0.2rem 1rem;
+  border: 0px;
+  margin-left: 3rem;
+  margin-right: 0.6rem;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn-login:hover {
+  background-color: rgba(255, 255, 255, 0.534);
+  border-radius: 10px;
+}
+
+.nav-btn-blue {
+  padding: 0.2rem 1rem;
+  margin-right: 0.6rem;
+  border: 0px;
+  background-color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #002770;
+}
+
+.hide {
+  display: none;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Navbar {
+    width: 100%;
+    left: 0;
+  }
+}
+/*# sourceMappingURL=nav-bar.component.css.map */

@@ -1,0 +1,61 @@
+<div class="main container-fluid">
+    <div data-aos="fade-down" class="hero row mx-auto  ">
+        <div class="col-md-6">
+            <h2>
+                One app to replace them all.
+            </h2>
+            <p>All your work in one placce: Tasks,docs,chat,goals,& more</p>
+            <div class="input-icons">
+                <img class="icon" src="../../../assets/icon/mail.png" alt="">
+                <input class="shadow" type="email" placeholder="Enter your email address">
+            </div>
+            <div class="d-flex">
+                <button class="shadow btn-custom">Get Started</button>
+                <p>FREE FOREVER NO CREDIT CARD</p>
+            </div>
+
+        </div>
+        <div class="col-md-6 play-vid ">
+            <button (click)="openDialog()" class="shadow  "></button>
+        </div>
+    </div>
+    <div class="container freeForever">
+        <div class="separator">JOIN 200,000+ HIGHLY PRODUCTIVE TEAMS</div>
+        <div class="teams d-flex align-content-center">
+            <img src="../../../assets/teams/google.png" alt="">
+            <img src="../../../assets/teams/webflow.svg" alt="">
+            <img src="../../../assets/teams/booking-com.svg" alt="">
+            <img src="../../../assets/teams/uber.png" alt="">
+            <img src="../../../assets/teams/padres.svg" alt="">
+        </div>
+        <div class="separator"><button class=" shadow btn-custom">FREE FOREVER</button></div>
+    </div>
+    <div class="container features">
+
+        <div class="row">
+            <div class="col-md-5 navigators">
+                <h4>Features</h4>
+                <h2>This is the future of work.</h2>
+                <div class="line"></div>
+                <div class="list" id="list-example">
+                    <div class="btn-list" [class.active_link]="feature.state" *ngFor="let feature of features; let i = index " (click)="indexNumber = i">
+                        <span>{{ i+1 | number: '2.0' }}</span>
+                        <p>{{feature.tag | uppercase}}</p>
+                        <div class="br"></div>
+                    </div>
+                </div>
+                <div class="line2"></div>
+            </div>
+            <swiper #swiperTag effect="fade" [(index)]="indexNumber" class="col-md-7 showcase" [pagination]="{ clickable: true }" [slidesPerView]="1" [spaceBetween]="50" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+                <ng-template swiperSlide let-data *ngFor="let feature of features;let i = index" id={{i}}>
+                    <img [class]="data.isActive?'show':'hide'" [src]="feature.url" alt="">
+                    <button class="badge" [class]="data.isActive?'show':'hide'">
+                        {{feature.tag | uppercase}}
+                    </button>
+                </ng-template>
+            </swiper>
+
+        </div>
+    </div>
+
+</div>

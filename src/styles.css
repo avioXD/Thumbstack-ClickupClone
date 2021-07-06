@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(e:\PROJECTS\THUMB STACK\Code\ClickUp\node_modules\swiper\swiper-bundle.min.css);
+@font-face {
+  font-family: 'Oxygen', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700;600;500&display=swap");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html h1,
+html h4,
+html h2,
+html h5,
+html h6,
+html h3,
+body h1,
+body h4,
+body h2,
+body h5,
+body h6,
+body h3 {
+  letter-spacing: 2px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.btn-custom {
+  width: 12rem;
+  height: 3.5rem;
+  border: 0px;
+  border-radius: 8px;
+  background-color: #987bff;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn-custom:hover {
+  background-color: #6955af;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,18 @@
+<div class="container-fluid main-nav" [class.nav-onscroll]="scrolled">
+    <mat-toolbar class="Navbar">
+        <div class="logo-item">
+            <img class="logo" src="../../../assets/home_main/logo-clickup_color.svg" alt="" srcset="">
+        </div>
+        <div class="menu">
+            <button (mouseenter)="product=false" class="nav-btn" [class.nav-btn-blue]="!product">Product</button>
+            <button class="nav-btn">Learn</button>
+            <button class="nav-btn">Pricing</button>
+            <button class="nav-btn">Contact Sales</button>
+            <button class=" btn-login">Login</button>
+            <button mat-raised-button color="primary">SignUp</button>
+        </div>
+
+    </mat-toolbar>
+    <app-products-card (mouseleave)="product=true" [class.hide]="product"></app-products-card>
+
+</div>

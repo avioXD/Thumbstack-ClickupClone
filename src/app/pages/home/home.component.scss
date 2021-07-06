@@ -1,0 +1,253 @@
+.main {
+    background-image: url('../../../assets/bg/bg_gradient__main-header.svg');
+    width: 100%;
+    height: 2000vh;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-x: 85%;
+}
+
+.hero {
+    padding: 5rem;
+    padding-top: 10rem;
+    width: 70%;
+    position: relative;
+    margin-bottom: 8rem;
+    h2 {
+        text-align: left;
+        font-size: 60px;
+        line-height: 90px;
+        font-weight: bold;
+        width: 95%;
+    }
+    p {
+        color: gray;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .input-icons img {
+        position: absolute;
+        width: 35px;
+        top: 25px;
+        left: 15px;
+    }
+    .input-icons {
+        position: relative;
+        width: 100%;
+    }
+    input {
+        border: 0px;
+        border-left: 8px solid #ff0095;
+        height: 3.5rem;
+        border-radius: 5px;
+        width: 30rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding-left: 3rem;
+        font-size: 20px;
+        outline: none;
+    }
+     ::placeholder {
+        color: rgb(160, 160, 160);
+        font-size: 18px;
+        padding: 1rem;
+        padding-left: 0rem;
+    }
+    .d-flex p {
+        color: gray;
+        font-size: 15px;
+        font-weight: 500;
+        margin: auto;
+        margin-left: 1rem;
+        width: 11rem;
+    }
+}
+
+.play-vid {
+    background-image: url("../../../assets/bg/sprint-graphic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    button {
+        height: 9rem;
+        width: 9rem;
+        position: relative;
+        margin: auto;
+        border: 0px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        background-image: url("../../../assets/buttons/play-purple\ \(1\).svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 6rem;
+        background-position-x: 1.7rem;
+        background-position-y: 2rem;
+        &:hover {
+            background-image: url("../../../assets/buttons/play-white.svg");
+            background-color: #987bff;
+        }
+    }
+}
+
+.freeForever {
+    .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: rgba(99, 99, 99, 0.692);
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .separator::before,
+    .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid rgba(197, 197, 197, 0.438);
+    }
+    .separator:not(:empty)::before {
+        margin-right: 1.2em;
+    }
+    .separator:not(:empty)::after {
+        margin-left: 1.2em;
+    }
+    .teams {
+        margin: 1rem;
+        padding: 4%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-image: url("../../../assets/bg/dots.svg");
+        img {
+            width: 6rem;
+            margin: auto;
+        }
+    }
+}
+
+.backdropBackground {
+    color: #987bff;
+}
+
+.features {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 10rem;
+    h4 {
+        color: #987bff;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+    .navigators {
+        padding-right: 2rem;
+        .list {
+            .active_link {
+                span {
+                    color: #987bff;
+                }
+                .br {
+                    width: 30%;
+                }
+                p {
+                    color: rgb(92, 92, 92);
+                    font-weight: bold !important;
+                }
+            }
+            .btn-list {
+                cursor: pointer;
+                width: 100%;
+                border-radius: 8px;
+                padding: 1rem 1rem;
+                padding-left: 0;
+                text-align: left;
+                display: flex;
+                justify-content: left;
+                color: rgb(160, 160, 160);
+                &:hover {
+                    color: rgb(92, 92, 92);
+                    p {
+                        font-weight: bold;
+                    }
+                }
+                span {
+                    margin-left: 1px;
+                    width: 10%;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .br {
+                    margin: auto;
+                    background-color: #987bff;
+                    height: 0.4rem;
+                    border-radius: 8px;
+                }
+                p {
+                    width: 60%;
+                    margin: auto;
+                    margin-left: 1px;
+                    font-weight: normal;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .line {
+        margin-left: 6px;
+        height: 4rem;
+        width: 0.2rem;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.438);
+    }
+    .line2 {
+        margin-left: 6px;
+        height: 10rem;
+        width: 0.2rem;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.438);
+    }
+    .showcase {
+        background-image: url("../../../assets/bg/dots.svg");
+        background-position: center;
+        padding: 2rem;
+        background-position-y: -10px;
+        height: fit-content;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .badge {
+            position: absolute;
+            bottom: -1.5rem;
+            left: -1.5rem;
+            font-size: 25px;
+            text-align: left;
+            font-weight: bold;
+            border-radius: 0px 100px 0px 0px;
+            z-index: 2;
+            color: rgb(43, 43, 43);
+            background-color: rgb(255, 255, 255);
+            padding: 1.6rem 3rem;
+            padding-left: 1rem;
+            border: 0px;
+            box-shadow: 6px -6px 20px rgba(151, 151, 151, 0.192);
+        }
+    }
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and(max-width:1200px) {
+    .hero {
+        width: 100%;
+        left: 0;
+    }
+}
