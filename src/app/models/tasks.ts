@@ -4,8 +4,9 @@ export interface Tasks {
     task_for:string
     title: string,
     description: string,
-    assigned_date: Date,
-    finishing_date: Date,
+    date_range:{
+        start: Date, end: Date
+    }
     time_estimates:string,
     assigned_by:{
         _id: string,
@@ -22,9 +23,7 @@ export interface Tasks {
             tag:string
         }
     ],
-    subtasks:[
-        Tasks
-    ],
+    subtasks?:[Task],
     priority:string,
     sprintPoints:number,
     milestone:number,
