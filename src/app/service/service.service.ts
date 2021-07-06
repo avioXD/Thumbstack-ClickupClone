@@ -7,11 +7,12 @@ import { Tasks } from '../models/tasks';
   providedIn: 'root'
 })
 export class ServiceService {
-  Strategys!:Strategy[];
+  Strategys:Strategy[];
 
   constructor() { 
     this.Strategys = [
       {
+        name:"",
         tasks:[
         {
         _id:"string",
@@ -43,11 +44,16 @@ export class ServiceService {
       milestone:0,
       },
     ]
-    }]
+    },
+    {
+      name:"",
+      tasks:[]
+    }
+  ]
 
   }
-  addStrategy(){
-
+  addStrategy(newStrategy:any){
+    return this.Strategys.push(newStrategy);
   }
 
   addTask(task_data:Tasks,index:number){
