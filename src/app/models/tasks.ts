@@ -18,11 +18,7 @@ export interface Tasks {
             role:string,
         }
     ],
-    tags:[
-        {
-            tag:string
-        }
-    ],
+    tags:any,
     subtasks?:[Task],
     priority:string,
     sprintPoints:number,

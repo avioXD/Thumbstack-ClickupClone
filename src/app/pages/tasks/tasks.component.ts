@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from 'src/app/service/service.service';
 
 @Component({
   selector: 'app-tasks',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasksComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private service: ServiceService) { }
+  raw:any;
   ngOnInit(): void {
+    this.service.getStrategy().subscribe((data)=>{
+      this.raw = data;
+      this.raw = JSON.stringify(this.raw)
+    })
   }
 
 }
