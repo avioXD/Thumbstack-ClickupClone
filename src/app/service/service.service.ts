@@ -1,15 +1,16 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
 import { Strategy } from '../models/strategy';
 import { Tasks } from '../models/tasks';
- 
+
 @Injectable({
   providedIn: 'root'
 })
 export class ServiceService {
   Strategys:Strategy[];
 
-  constructor() { 
+  constructor(private http:  HttpClient) { 
     this.Strategys = [
       {
         name:"Phase 1",
@@ -172,5 +173,7 @@ export class ServiceService {
   getTasks(index:number){
     return of(this.Strategys[index].tasks);
   }
-
+  getDummy1(){
+    return this.http.get('assets/data/local_data.json');
+  }
 }

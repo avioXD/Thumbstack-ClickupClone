@@ -20,8 +20,19 @@ body {
     }
 }
 
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
+    padding: 0;
 }
 
 .btn-custom {
@@ -37,4 +48,23 @@ body {
     &:hover {
         background-color: #6955af;
     }
+}
+
+.toggler {
+    margin: auto;
+    background-color: rgba(189, 189, 189, 0.445);
+    padding: 0.4rem;
+    font-size: 0.4rem;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+.logo {
+    width: 7rem;
+    margin: auto;
 }

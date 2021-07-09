@@ -1,0 +1,64 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.part1 {
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+.menu {
+    position: relative;
+    top: 0;
+    width: 25rem;
+    border-right: 1px solid rgba(97, 97, 97, 0.247);
+    .part1 {
+        position: relative;
+        top: 0px;
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        align-items: flex-start;
+        display: flex;
+        padding: 1.2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        border: 0px;
+        background-color: transparent;
+        color: rgb(58, 58, 58);
+        transition: all 0.6s;
+        transition: color 0.3s;
+        i {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+        &:hover {
+            background: rgb(131, 58, 180);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            color: rgb(238, 238, 238);
+        }
+    }
+    span {
+        width: 100%;
+        align-items: flex-start;
+        display: flex;
+        padding: 1.3rem;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 550;
+        border: 0px;
+        background-color: transparent;
+        color: rgb(58, 58, 58);
+        transition: all 0.6s;
+        &:hover {
+            cursor: pointer;
+            color: rgb(131, 58, 180);
+        }
+    }
+    .logo {
+        margin: 1rem;
+    }
+}

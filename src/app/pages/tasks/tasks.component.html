@@ -1,1 +1,21 @@
-{{raw}}
+<div class="container-fluid d-flex p-4 ">
+    <div class="menu">
+        <div class="part1">
+            <img class="logo" src="../../../assets/home_main/logo-clickup_color.svg" alt="">
+            <button [routerLink]="['']"><i class="pi pi-home"   ></i> Home</button>
+            <button><i class="pi pi-bell"  ></i> Notification</button>
+            <span> FAVORITES</span>
+            <button><i class="pi pi-home"  ></i> Home</button>
+        </div>
+    </div>
+    <div class="panel w-100">
+        <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+            <div class="example-box" *ngFor="let movie of nums" cdkDrag>
+                <app-phase></app-phase>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

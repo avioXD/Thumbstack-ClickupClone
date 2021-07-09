@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GanttComponent } from './gantt.component';
+import { PhaseComponent } from './phase.component';
 
-describe('GanttComponent', () => {
-  let component: GanttComponent;
-  let fixture: ComponentFixture<GanttComponent>;
+describe('PhaseComponent', () => {
+  let component: PhaseComponent;
+  let fixture: ComponentFixture<PhaseComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GanttComponent ]
+      declarations: [ PhaseComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GanttComponent);
+    fixture = TestBed.createComponent(PhaseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

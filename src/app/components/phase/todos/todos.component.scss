@@ -1,0 +1,89 @@
+ .task-row {
+     background-color: transparent;
+     display: flex;
+     .toggler {
+         margin: 1rem;
+         background-color: rgba(189, 189, 189, 0.445);
+         padding: 0.4rem;
+         font-size: 0.4rem;
+         cursor: pointer;
+         align-items: center;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition: all 0.8s;
+     }
+     .icon {
+         margin: auto;
+         margin-left: 0.6rem;
+         width: 1rem;
+         height: 1rem;
+     }
+     .phase-name {
+         margin: auto;
+         margin-left: 0.5rem;
+         font-size: 12px;
+         font-weight: 600;
+         border-radius: 8px;
+         padding: 0.3rem 0.6rem;
+     }
+     .part-1 {
+         cursor: pointer;
+         padding: 0.1rem 0.3rem;
+         border-radius: 4px;
+         &:hover {
+             background-color: rgb(94, 91, 51);
+         }
+     }
+     .info {
+         cursor: pointer;
+         padding: 0.3rem;
+         border-radius: 50%;
+     }
+     .btn-sm-card {
+         margin-left: 0.6rem;
+         background-color: rgb(29, 255, 67);
+         color: rgb(49, 49, 49);
+         padding: 0.2rem 0.5rem;
+         font-size: 11px;
+         border: 0px;
+         text-align: center;
+         border-radius: 2px;
+         font-weight: 600;
+         i {
+             font-size: 11px;
+             margin-right: 0.2rem;
+         }
+     }
+ }
+ 
+ .task-opt {
+     justify-content: left;
+     align-items: center;
+     .btn-box {
+         margin: 0.6rem;
+         padding: 0.3rem;
+         border-radius: 2px;
+         background: tra;
+         border: 0px;
+         background-color: rgb(214, 214, 214);
+     }
+ }
+ 
+ td {
+     background-color: rgb(243, 243, 243);
+     color: rgb(56, 56, 56);
+ }
+ 
+ .tr {
+     background-color: rgb(83, 83, 83)!important;
+     .btn-box {
+         margin: 0.6rem;
+         padding: 0.3rem;
+         border-radius: 2px;
+         background: tra;
+         border: 0px;
+         background-color: rgb(214, 214, 214);
+     }
+ }

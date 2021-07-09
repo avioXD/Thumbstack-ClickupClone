@@ -1,0 +1,28 @@
+<div *ngIf="toggle" class="new-task-input-group">
+    <p-menu #menu [popup]="true" [model]="task.task"></p-menu>
+    <button pRipple pTooltip="TODO" tooltipPosition="top" class="btn-box" (click)="menu.toggle($event)"></button>
+    <input type="text" placeHolder="Comment">
+    <p-overlayPanel #rangeCalender>
+        <ng-template pTemplate>
+            <p-calendar [(ngModel)]="task.dates" [inline]="true" [readonlyInput]="true" selectionMode="range"></p-calendar>
+        </ng-template>
+    </p-overlayPanel>
+    <button pRipple pTooltip="Set Start Date" tooltipPosition="top" class="i-btn" (click)="rangeCalender.toggle($event)"><i class="pi pi-calendar-plus"></i></button>
+    <button pRipple pTooltip="Set Due Date" tooltipPosition="top" class="i-btn" (click)="rangeCalender.toggle($event)"><i class="pi pi-calendar-minus"></i></button>
+    <p-overlayPanel #tags>
+        <ng-template pTemplate>
+            <i class="pi pi-search"></i>
+            <input class="search" type="text" placeholder="tags" [(ngModel)]="task.tag_search" />
+        </ng-template>
+    </p-overlayPanel>
+    <button pRipple pTooltip="Tags" tooltipPosition="top" class="i-btn" (click)="tags.toggle($event)"><i class="pi pi-tags"></i></button>
+    <p-overlayPanel #setDueDate>
+        <ng-template pTemplate>
+            <i class="pi pi-search"></i>
+            <input class="search" type="text" placeholder="Assigne name" [(ngModel)]="task.assigne_search" />
+        </ng-template>
+    </p-overlayPanel>
+    <button pRipple class="i-btn" (click)="setDueDate.toggle($event)"><i class="pi pi-user-plus"></i></button>
+    <button pRipple class="btn-custom-small">SAVE</button>
+    <i pRipple class="pi pi-times toggler" (click)="toggler()"></i>
+</div>

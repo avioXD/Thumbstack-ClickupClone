@@ -1,0 +1,168 @@
+{
+
+    "data": [{
+
+            "data": {
+                "_id": "adwawad",
+                "status": "COMPLETED",
+                "task_for": "Business",
+                "title": "Services Generated",
+                "description": "...",
+                "date_range": {
+                    "start": "10-5-2018",
+                    "end": "15-8-2018"
+                },
+                "time_estimates": "10H",
+                "assigned_by": {
+                    "_id": "wd",
+                    "role": "manager"
+                },
+                "assigned_to": [{
+
+                    "name": "Kunal Kamra"
+                }],
+                "tags": "any",
+
+                "priority": "HIGH",
+                "sprintPoints": 0,
+                "milestone": 2
+
+            },
+            "children": [{
+                    "data": {
+                        "status": "COMPLETED",
+                        "task_for": "Business",
+                        "title": "service maping",
+                        "description": "..."
+                    }
+                },
+                {
+                    "data": {
+                        "status": "COMPLETED",
+                        "task_for": "Business",
+                        "title": "service restructuring",
+                        "description": "..."
+                    }
+                }
+            ]
+
+        },
+        {
+
+            "data": {
+                "_id": "adwawad",
+                "status": "TODO",
+                "task_for": "Vaccation",
+                "title": "Serve project",
+                "description": "...",
+                "date_range": {
+                    "start": "10-5-2018",
+                    "end": "15-8-2018"
+                },
+                "time_estimates": "10H",
+                "assigned_by": {
+                    "_id": "wd",
+                    "role": "manager"
+                },
+                "assigned_to": [{
+
+                    "name": "Kunal Kamra"
+                }],
+                "tags": "any",
+
+                "priority": "HIGH",
+                "sprintPoints": 0,
+                "milestone": 2
+            }
+
+        },
+        {
+
+            "data": {
+                "_id": "adwawad",
+                "status": "TODO",
+                "task_for": "office",
+                "title": "Map Table model",
+                "description": "...",
+                "date_range": {
+                    "start": "10-5-2018",
+                    "end": "15-8-2018"
+                },
+                "time_estimates": "10H",
+                "assigned_by": {
+                    "_id": "wd",
+                    "role": "manager"
+                },
+                "assigned_to": [{
+
+                    "name": "Kunal Kamra"
+                }],
+                "tags": "any",
+
+                "priority": "HIGH",
+                "sprintPoints": 0,
+                "milestone": 2
+            }
+
+        },
+        {
+
+            "data": {
+                "_id": "adwawad",
+                "status": "COMPLETED",
+                "task_for": "Business",
+                "title": "Css designs",
+                "description": "...",
+                "date_range": {
+                    "start": "10-5-2018",
+                    "end": "15-8-2018"
+                },
+                "time_estimates": "10H",
+                "assigned_by": {
+                    "_id": "wd",
+                    "role": "manager"
+                },
+                "assigned_to": [{
+
+                    "name": "Kunal Kamra"
+                }],
+                "tags": "any",
+
+                "priority": "HIGH",
+                "sprintPoints": 0,
+                "milestone": 2
+            }
+
+        },
+        {
+
+            "data": {
+                "_id": "adwawad",
+                "status": "COMPLETED",
+                "task_for": "Project",
+                "title": "Services Generated",
+                "description": "...",
+                "date_range": {
+                    "start": "10-5-2018",
+                    "end": "15-8-2018"
+                },
+                "time_estimates": "10H",
+                "assigned_by": {
+                    "_id": "wd",
+                    "role": "manager"
+                },
+                "assigned_to": [{
+
+                    "name": "Kunal Kamra"
+                }],
+                "tags": "any",
+
+                "priority": "HIGH",
+                "sprintPoints": 0,
+                "milestone": 2
+            }
+
+        }
+    ]
+
+}

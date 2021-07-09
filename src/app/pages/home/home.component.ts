@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   features!: Features[];
   indexNumber = 0;
   constructor(public dialog: MatDialog) { }
-
+  display: boolean = false;
   ngOnInit(): void {
     this.features= [
       {
@@ -88,6 +88,7 @@ export class HomeComponent implements OnInit {
 
 
   }
+ 
   openDialog(): void {
     const dialogRef = this.dialog.open(VideoComponent, {
         hasBackdrop : true,

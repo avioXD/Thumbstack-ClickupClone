@@ -1,0 +1,22 @@
+<div class="container-fluid phase-card  ">
+
+    <!-- <p-breadcrumb class="breadcrumb" [model]="items2" [style]="{background: 'none',border:0 }"></p-breadcrumb> -->
+    <div class=" phase-row">
+        <div class=" part-1 d-flex justify-content-center">
+            <i *ngIf="!toggler.inside" pRipple class="pi pi-chevron-right toggler" (click)="toggler.inside=!toggler.inside"></i>
+            <i *ngIf="toggler.inside" pRipple class="pi  pi-chevron-down toggler" (click)="toggler.inside=!toggler.inside"></i>
+            <img src="../../../assets/icon/ofiice.png" alt="" class="icon ">
+            <div pRipple class="phase-name">Office</div>
+        </div>
+        <i pRipple class="pi pi-info-circle info" style="font-size: 1rem"></i>
+        <button pRipple class="btn-sm-card" (click)="toggler.new_task=!toggler.new_task"><i class="pi pi-plus"></i> NEW TASK </button>
+        <button pRipple class="btn-sm-card" (click)="toggler.despo=!toggler.despo">  {{!toggler.despo?"SHOW ":"HIDE "}}DESCRIPTION </button>
+    </div>
+    <div class="container-fluid inner-part">
+        <app-new-task [toggle]="toggler.new_task"></app-new-task>
+        <div *ngIf="toggler.inside">
+            <app-todos></app-todos>
+        </div>
+
+    </div>
+</div>
